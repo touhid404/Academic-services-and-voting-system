@@ -82,10 +82,10 @@ try {
 
                     if ($stmt->execute()) {
                         echo "<script>alert('Registration Successful');</script>";
-                        echo "<script>setTimeout(function() { window.location.href = 'VoteTopics.php'; }, 1000);</script>";
+                        echo "<script>setTimeout(function() { window.location.href = 'VoteTopics.php'; }, 500);</script>";
                     } else {
                         echo "<script>alert('An error occurred. Please try again.');</script>";
-                        echo "<script>setTimeout(function() { window.location.href = 'VoteTopics.php'; }, 1000);</script>";
+                        echo "<script>setTimeout(function() { window.location.href = 'VoteTopics.php'; }, 500);</script>";
                     }
                 }
             }
