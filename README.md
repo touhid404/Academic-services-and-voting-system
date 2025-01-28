@@ -50,7 +50,7 @@ This project was developed as part of our Database Management Systems (DBMS) cou
    - Import the provided SQL file into the database.
 3. Run the project:
    - Start a local server using XAMPP or WAMP.
-   - Navigate to `http://localhost/academic-services-voting`.
+  
 
 ## Usage
 1. **Sign up/Login**: Students need to create an account or log in.
