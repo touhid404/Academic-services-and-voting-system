@@ -84,7 +84,7 @@ $redirectUrl = $_SESSION['redirectUrl'];
         }
 
         .modal-background.open {
-            opacity: 1; /* Fade-in */
+            opacity: 1; /
             visibility: visible; /* Make visible */
             transition: opacity 0.3s ease, visibility 0s linear 0s; /* Fade-in */
         }
@@ -169,7 +169,7 @@ $redirectUrl = $_SESSION['redirectUrl'];
             // Redirect back to the referring page
             setTimeout(function() {
                 window.location.href = "<?php echo $redirectUrl; ?>";
-            }, 300); // Delay the redirection until the animation finishes
+            }, 300); 
         }
 
         document.getElementById("Modal").addEventListener("click", function(event) {
