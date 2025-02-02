@@ -66,6 +66,7 @@ if ($result && $result->num_rows > 0) {
 
 
 $todaydate = date("Y-m-d"); // Current date
+$today = date("Y-m-d");
 $current_time = date("H:i:s"); // Current time
 $current_datetime = "$todaydate $current_time"; // Combine date and time
 
@@ -106,10 +107,10 @@ if ($result && $result->num_rows > 0) {
  $stmt = $conn->prepare($sql);
  $stmt->bind_param("s", $today);
  $stmt->execute();
- $result = $stmt->get_result();
+ $resulth = $stmt->get_result();
 
  // Check the result
- if ($result->num_rows > 0) {
+ if ($resulth->num_rows > 0) {
      $hasBustoday = true;
  }
 
