@@ -88,6 +88,7 @@ $sql = "
 $result = $conn->query($sql);
 
 $booking_session = false;
+$hasBustoday = false;
 $session_nameC = "";
 
 if ($result && $result->num_rows > 0) {
@@ -99,6 +100,23 @@ if ($result && $result->num_rows > 0) {
 } else {
     $booking_session = false;
 }
+
+ // Check if the bus is available for today
+ $sql = "SELECT * FROM bus_routine WHERE date = ?";
+ $stmt = $conn->prepare($sql);
+ $stmt->bind_param("s", $today);
+ $stmt->execute();
+ $result = $stmt->get_result();
+
+ // Check the result
+ if ($result->num_rows > 0) {
+     $hasBustoday = true;
+ }
+
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -274,7 +292,7 @@ if ($result && $result->num_rows > 0) {
 
 <body>
 
-    <?php if ($booking_session): ?>
+    <?php if ($booking_session && $hasBustoday): ?>
         <div class="container">
             <h2>Bus Seat Plan</h2>
           
