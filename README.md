@@ -63,8 +63,8 @@ This project was developed as part of our Database Management Systems (DBMS) cou
 8. **Manage Tasks**: Keep track of personal tasks and assignments.
 
 ## Contributors
-- Touhidul Islam Riyadh
-- Fariha Islam Hriti
+- Touhidul Islam Riyadh .
+- Fariha Islam Hriti .
 
 
 ## Contact
