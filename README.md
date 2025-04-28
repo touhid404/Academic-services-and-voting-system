@@ -42,7 +42,7 @@ This project was developed as part of our Database Management Systems (DBMS) cou
 ## Installation Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Riyadh435/Academic-services-and-voting-system.git
+   git clone https://github.com/touhid404/Academic-services-and-voting-system.git
    ```
 2. Import the database:
    - Open phpMyAdmin.
