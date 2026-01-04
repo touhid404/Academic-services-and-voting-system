@@ -67,5 +67,4 @@ This project was developed as part of our Database Management Systems (DBMS) cou
 - Fariha Islam Hriti .
 
 
-## Contact
 video link : https://youtu.be/Mc0-KzEjsFg?si=Z2IiEAT0JPLobWpZ
